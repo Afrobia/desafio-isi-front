@@ -14,7 +14,7 @@ function ProductList() {
     const fetchProducts = async () => {
       try {
         setLoading(true); 
-        const response = await fetch('http://localhost:3010/products');
+        const response = await fetch('https://dummyjson.com/products');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
